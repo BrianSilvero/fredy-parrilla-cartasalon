@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#141110">
+  <meta name="description" content="Carta del salón de Fredy Parrilla, Puerto Madero.">
+  <title>Fredy · La carta</title>
+  <link rel="icon" href="img/logo-fredy.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/salon.css">
+</head>
+<body>
+  <noscript><p class="noscript">Activá JavaScript o pedí la carta impresa a tu mozo.</p></noscript>
+
+  <!-- ============ 1 · Elegí tu idioma ============ -->
+  <section id="vista-idioma" class="vista-idioma" aria-labelledby="titulo-idioma">
+    <img class="idioma-toro" src="img/toro.webp" alt="" width="820" height="958" aria-hidden="true">
+    <div class="idioma-brasa" aria-hidden="true"></div>
+
+    <div class="idioma-contenido">
+      <img class="idioma-cartel" src="img/cartel-fredy.webp" alt="Lo de Fredy Parrilla" width="900" height="333">
+      <p class="idioma-kicker">BIENVENIDOS · WELCOME</p>
+      <h1 id="titulo-idioma" class="idioma-titulo">Elegí tu idioma</h1>
+      <p class="idioma-sub">Choose your language · Escolha seu idioma<br>Choisissez votre langue</p>
+      <div class="linea" aria-hidden="true"></div>
+
+      <nav class="idioma-lista" aria-label="Idiomas">
+        <button type="button" class="idioma-op press entra e1" data-idioma="es" lang="es">
+          <svg class="bandera" aria-hidden="true"><use href="#b-ar"/></svg>
+          <span class="idioma-nombre">Español</span>
+          <span class="idioma-nota"></span>
+        </button>
+        <button type="button" class="idioma-op press entra e2" data-idioma="en" lang="en">
+          <svg class="bandera" aria-hidden="true"><use href="#b-us"/></svg>
+          <span class="idioma-nombre">English</span>
+          <span class="idioma-nota"></span>
+        </button>
+        <button type="button" class="idioma-op press entra e3" data-idioma="pt" lang="pt">
+          <svg class="bandera" aria-hidden="true"><use href="#b-br"/></svg>
+          <span class="idioma-nombre">Português</span>
+          <span class="idioma-nota"></span>
+        </button>
+        <button type="button" class="idioma-op press entra e4" data-idioma="fr" lang="fr">
+          <svg class="bandera" aria-hidden="true"><use href="#b-fr"/></svg>
+          <span class="idioma-nombre">Français</span>
+          <span class="idioma-nota"></span>
+        </button>
+      </nav>
+
+      <p class="idioma-pie">Podés cambiarlo cuando quieras desde el menú.</p>
+    </div>
+  </section>
+
+  <!-- ============ 2 · La carta ============ -->
+  <div id="vista-carta" class="vista-carta" hidden>
+    <!-- Header "hoja de cuchilla" (diseño "Header · Cuchilla de carnicero").
+         Solo logo al centro e idioma. Contacto sale de acá. -->
+    <header class="hc">
+      <div class="hc-inner">
+
+        <!-- Hoja de cuchilla · ESCRITORIO (decorativa) -->
+        <svg class="hc-blade hc-blade--desk" aria-hidden="true" focusable="false" viewBox="0 0 1100 86" width="1100" height="86">
+          <defs>
+            <linearGradient id="hcBlade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F2123"/><stop offset=".18" stop-color="#3A3E42"/><stop offset=".6" stop-color="#2D3134"/><stop offset="1" stop-color="#222528"/></linearGradient>
+            <linearGradient id="hcSatin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".32" stop-color="#FFFFFF" stop-opacity=".05"/><stop offset=".48" stop-color="#FFFFFF" stop-opacity=".11"/><stop offset=".62" stop-color="#FFFFFF" stop-opacity=".04"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+            <linearGradient id="hcEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#565C61"/><stop offset=".5" stop-color="#A5ACB2"/><stop offset="1" stop-color="#DCE0E3"/></linearGradient>
+            <pattern id="hcBrush" width="9" height="3" patternUnits="userSpaceOnUse"><rect width="9" height=".8" fill="#FFFFFF" fill-opacity=".045"/><rect x="3" y="1.6" width="5" height=".6" fill="#000000" fill-opacity=".08"/></pattern>
+            <pattern id="hcHone" width="4" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(18)"><rect width=".6" height="24" fill="#FFFFFF" fill-opacity=".14"/><rect x="2.2" width=".4" height="24" fill="#000000" fill-opacity=".12"/></pattern>
+            <clipPath id="hcClip"><path d="M30 4H1090Q1098 4 1098 12V72Q1098 80 1090 80H7Q0 80 1.5 73L15 11Q17 4 30 4Z"/></clipPath>
+          </defs>
+          <!-- sombra -->
+          <path d="M30 7H1090Q1098 7 1098 15V75Q1098 83 1090 83H7Q0 83 1.5 76L15 14Q17 7 30 7Z" fill="#000000" fill-opacity=".5"/>
+          <!-- hoja (punta inclinada a la izquierda) -->
+          <path d="M30 4H1090Q1098 4 1098 12V72Q1098 80 1090 80H7Q0 80 1.5 73L15 11Q17 4 30 4Z" fill="url(#hcBlade)"/>
+          <g clip-path="url(#hcClip)">
+            <rect width="1100" height="86" fill="url(#hcBrush)"/>
+            <rect width="1100" height="86" fill="url(#hcSatin)"/>
+            <!-- pátina -->
+            <g fill="#4A3A2E" fill-opacity=".2"><ellipse cx="190" cy="34" rx="70" ry="14"/><ellipse cx="470" cy="46" rx="95" ry="11"/><ellipse cx="770" cy="30" rx="75" ry="10"/><ellipse cx="1010" cy="42" rx="65" ry="13"/></g>
+            <g fill="#000000" fill-opacity=".14"><ellipse cx="330" cy="22" rx="44" ry="6"/><ellipse cx="640" cy="50" rx="55" ry="5"/><ellipse cx="905" cy="19" rx="38" ry="5"/><ellipse cx="120" cy="52" rx="30" ry="4"/></g>
+            <!-- rayas de uso -->
+            <g fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width=".5" stroke-linecap="round"><path d="M120 20L190 26"/><path d="M260 44L300 40"/><path d="M410 18L470 22"/><path d="M540 36L612 33"/><path d="M700 46L742 50"/><path d="M820 26L900 29"/><path d="M960 52L1012 48"/><path d="M60 46L112 43"/><path d="M372 32L398 34"/><path d="M1040 24L1074 27"/></g>
+            <!-- lomo -->
+            <rect y="4" width="1100" height="4" fill="#121416"/>
+            <path d="M0 8.6H1100" stroke="#7A8187" stroke-opacity=".4" stroke-width=".7"/>
+            <!-- filo afilado a mano -->
+            <path d="M0 61C110 59 210 65 330 62C450 59 560 64 690 62C820 60 930 65 1100 61V86H0Z" fill="url(#hcEdge)"/>
+            <path d="M0 61C110 59 210 65 330 62C450 59 560 64 690 62C820 60 930 65 1100 61V86H0Z" fill="url(#hcHone)"/>
+            <path d="M0 61C110 59 210 65 330 62C450 59 560 64 690 62C820 60 930 65 1100 61" fill="none" stroke="#0E0F10" stroke-opacity=".75" stroke-width=".9"/>
+            <path d="M0 62C110 60 210 66 330 63C450 60 560 65 690 63C820 61 930 66 1100 62" fill="none" stroke="#FFFFFF" stroke-opacity=".18" stroke-width=".6"/>
+            <path d="M0 78.9H1100" stroke="#F2F4F5" stroke-width="1.6"/>
+            <!-- melladuras -->
+            <g fill="#1A1C1E"><path d="M210 80L213 77L216 80Z"/><path d="M585 80L587.5 77.8L590 80Z"/><path d="M872 80L875 77.4L878 80Z"/></g>
+          </g>
+          <!-- agujero para colgar -->
+          <circle cx="80" cy="26" r="9" fill="#120A06"/>
+          <circle cx="80" cy="26" r="9" fill="none" stroke="#0B0A09" stroke-width="1.2"/>
+          <path d="M72.4 30.5A9 9 0 0 0 87.6 30.5" fill="none" stroke="#B9BFC4" stroke-opacity=".7" stroke-width="1"/>
+        </svg>
+
+        <!-- Hoja de cuchilla · CELULAR (decorativa) -->
+        <svg class="hc-blade hc-blade--mob" aria-hidden="true" focusable="false" viewBox="0 0 330 64" width="330" height="64">
+          <defs>
+            <linearGradient id="hmBlade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F2123"/><stop offset=".18" stop-color="#3A3E42"/><stop offset=".6" stop-color="#2D3134"/><stop offset="1" stop-color="#222528"/></linearGradient>
+            <linearGradient id="hmSatin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+            <linearGradient id="hmEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#565C61"/><stop offset=".5" stop-color="#A5ACB2"/><stop offset="1" stop-color="#DCE0E3"/></linearGradient>
+            <pattern id="hmBrush" width="9" height="3" patternUnits="userSpaceOnUse"><rect width="9" height=".8" fill="#FFFFFF" fill-opacity=".045"/></pattern>
+            <pattern id="hmHone" width="3.5" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(18)"><rect width=".5" height="20" fill="#FFFFFF" fill-opacity=".14"/></pattern>
+            <clipPath id="hmClip"><path d="M15 3H322Q328 3 328 9V55Q328 61 322 61H5Q0 61 1 56L9 8Q10 3 15 3Z"/></clipPath>
+          </defs>
+          <path d="M15 5H322Q328 5 328 11V57Q328 63 322 63H5Q0 63 1 58L9 10Q10 5 15 5Z" fill="#000000" fill-opacity=".5"/>
+          <path d="M15 3H322Q328 3 328 9V55Q328 61 322 61H5Q0 61 1 56L9 8Q10 3 15 3Z" fill="url(#hmBlade)"/>
+          <g clip-path="url(#hmClip)">
+            <rect width="330" height="64" fill="url(#hmBrush)"/>
+            <rect width="330" height="64" fill="url(#hmSatin)"/>
+            <g fill="#4A3A2E" fill-opacity=".2"><ellipse cx="110" cy="26" rx="40" ry="9"/><ellipse cx="250" cy="34" rx="45" ry="8"/></g>
+            <g fill="#000000" fill-opacity=".14"><ellipse cx="180" cy="16" rx="26" ry="4"/><ellipse cx="300" cy="40" rx="20" ry="3"/></g>
+            <g fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width=".4" stroke-linecap="round"><path d="M70 14L110 18"/><path d="M150 36L180 33"/><path d="M230 20L270 23"/><path d="M290 44L315 41"/></g>
+            <rect y="3" width="330" height="3" fill="#121416"/>
+            <path d="M0 47C60 46 110 50 170 48C230 46 280 50 330 47V64H0Z" fill="url(#hmEdge)"/>
+            <path d="M0 47C60 46 110 50 170 48C230 46 280 50 330 47V64H0Z" fill="url(#hmHone)"/>
+            <path d="M0 47C60 46 110 50 170 48C230 46 280 50 330 47" fill="none" stroke="#0E0F10" stroke-opacity=".75" stroke-width=".7"/>
+            <path d="M0 60H330" stroke="#F2F4F5" stroke-width="1.3"/>
+            <path d="M140 61L142 59L144 61Z" fill="#1A1C1E"/>
+          </g>
+          <circle cx="52" cy="17" r="6" fill="#120A06" stroke="#0B0A09" stroke-width="1"/>
+          <path d="M47 20A6 6 0 0 0 57 20" fill="none" stroke="#B9BFC4" stroke-opacity=".7" stroke-width=".8"/>
+        </svg>
+
+        <!-- Logo al centro: lleva al principio de la carta -->
+        <a class="hc-logo" href="#carta" aria-label="Fredy Puerto Madero, inicio de la carta">
+          <img src="img/logo-fredy.webp" alt="" width="88" height="88">
+        </a>
+
+        <!-- Selector de idioma (abre el desplegable de los otros idiomas) -->
+        <div class="idioma-caja hc-lang-caja">
+          <button type="button" id="btn-idioma" class="hc-lang" aria-haspopup="true" aria-expanded="false" aria-controls="menu-idiomas" aria-label="Idioma: español">
+            <svg class="hc-bandera" aria-hidden="true" focusable="false" width="22" height="15"><use id="btn-idioma-bandera" href="#b-ar"/></svg>
+            <span id="btn-idioma-codigo">ES</span>
+            <svg class="hc-chevron" aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10"><path d="M2 3.5L5 6.5L8 3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </button>
+          <div id="menu-idiomas" class="menu-idiomas" role="group" hidden>
+            <p class="menu-titulo" data-t="cambiarIdioma">CAMBIAR IDIOMA</p>
+            <div id="menu-opciones" class="menu-opciones"></div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main id="carta" class="carta">
+      <div id="inicio-carta" class="carta-hero">
+        <p class="kicker" data-t="kicker">RESTAURANT &amp; TRADICIÓN ARGENTINA</p>
+        <h1 class="carta-titulo" data-t="laCarta">LA CARTA</h1>
+        <div class="linea" aria-hidden="true"></div>
+        <p class="moneda" data-t="moneda"></p>
+      </div>
+      <img class="hero-bife" src="img/bife-parrilla.webp" alt="" width="900" height="822" aria-hidden="true">
+
+      <div id="secciones"></div>
+
+      <footer class="carta-pie">
+        <!-- Línea que separa el pie de la última sección (Postres) -->
+        <span class="pie-linea" aria-hidden="true"></span>
+        <!-- Fondo: el frente del restaurante de noche -->
+        <img class="pie-fondo" src="img/exterior-noche.webp" alt="" width="960" height="720" aria-hidden="true" loading="lazy" decoding="async">
+        <img class="pie-cartel" src="img/cartel-fredy.webp" alt="" width="900" height="333" aria-hidden="true">
+        <p class="pie-cubierto"><span data-t="cubierto">PRECIO DEL CUBIERTO</span>: <span id="precio-cubierto" class="num">$ 4.000</span></p>
+        <p class="pie-mozo" data-t="pedi">Pedí a tu mozo</p>
+
+        <!-- Web y Contacto, separados por una línea dorada -->
+        <div class="pie-acciones">
+          <a id="pie-web" class="pie-accion press" href="#" target="_blank" rel="noopener">
+            <span class="pie-ic"><svg aria-hidden="true"><use href="#i-web"/></svg></span>
+            <span class="pie-titulo" data-t="visitaWeb">Nuestra web</span>
+            <span class="pie-nota" data-t="pieWebNota">Reservas y shows</span>
+          </a>
+          <span class="pie-divisor" aria-hidden="true"></span>
+          <button type="button" id="btn-contacto" class="pie-accion press" aria-haspopup="dialog" aria-controls="contacto">
+            <span class="pie-ic"><svg aria-hidden="true"><use href="#i-agenda"/></svg></span>
+            <span class="pie-titulo" data-t="contacto">CONTACTO</span>
+            <span class="pie-nota" data-t="pieContactoNota">Reseña y WhatsApp</span>
+          </button>
+        </div>
+      </footer>
+    </main>
+
+    <div class="nv-wrap">
+      <nav id="barra" aria-label="Categorías de la carta">
+        <ul class="nv-bar">
+          <span class="nv-rivet nv-rivet--tl" aria-hidden="true"></span>
+          <span class="nv-rivet nv-rivet--bl" aria-hidden="true"></span>
+          <span class="nv-rivet nv-rivet--tr" aria-hidden="true"></span>
+          <span class="nv-rivet nv-rivet--br" aria-hidden="true"></span>
+
+          <li><a class="nv-item" href="#entradas" data-nav="entradas" aria-current="true">
+            <span class="nv-ember" aria-hidden="true"></span>
+            <svg class="nv-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 16h17a8.5 8.5 0 0 0-17 0z"/><path d="M6.2 12.2l1.1 1M8.4 9.6l.8 1.2M12 8.4v1.4M15.6 9.6l-.8 1.2M17.8 12.2l-1.1 1"/></svg>
+            <span class="nv-label" data-t="nav.entradas">ENTRADAS</span>
+            <span class="nv-coal" aria-hidden="true"></span>
+          </a></li>
+
+          <li><a class="nv-item" href="#parrilla" data-nav="parrilla" aria-current="false">
+            <span class="nv-ember" aria-hidden="true"></span>
+            <svg class="nv-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21c3.6 0 6-2.4 6-5.6 0-3.6-2.6-5.4-3.6-8.4-.4 2-1.4 3.2-2.6 3.8C12.2 8 11 5.2 9.2 3c.2 3.6-3.2 6-3.2 10.4C6 18.6 8.4 21 12 21z"/><path d="M12 21c-1.5 0-2.6-1.1-2.6-2.6 0-1.8 1.4-2.6 2-4 .9 1.2 3.2 2.2 3.2 4 0 1.5-1.1 2.6-2.6 2.6z"/></svg>
+            <span class="nv-label" data-t="nav.parrilla">PARRILLA</span>
+            <span class="nv-coal" aria-hidden="true"></span>
+          </a></li>
+
+          <li><a class="nv-item" href="#minutas" data-nav="guarniciones" aria-current="false">
+            <span class="nv-ember" aria-hidden="true"></span>
+            <svg class="nv-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5.5 10h13l-1.6 10.5H7.1z"/><path d="M8 10V4.5M10.5 10V3M13.2 10V4M15.8 10V5.2"/><path d="M9 14.5c1.8 1 4.2 1 6 0"/></svg>
+            <span class="nv-label" data-t="nav.guarniciones">GUARNICIONES</span>
+            <span class="nv-coal" aria-hidden="true"></span>
+          </a></li>
+
+          <li><a class="nv-item" href="#bebidas" data-nav="bebidas" aria-current="false">
+            <span class="nv-ember" aria-hidden="true"></span>
+            <svg class="nv-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.8 3h8.4l-.4 5.4a3.8 3.8 0 0 1-7.6 0z"/><path d="M8.2 6.6h7.6"/><path d="M12 12.2V20M8.6 20.5h6.8"/></svg>
+            <span class="nv-label" data-t="nav.bebidas">BEBIDAS</span>
+            <span class="nv-coal" aria-hidden="true"></span>
+          </a></li>
+
+          <li><a class="nv-item" href="#postres" data-nav="postres" aria-current="false">
+            <span class="nv-ember" aria-hidden="true"></span>
+            <svg class="nv-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 13.2h17v2.4h-17z"/><path d="M5 15.6l1.3 4.6c.2.6.6.9 1.2.9h9c.6 0 1-.3 1.2-.9l1.3-4.6"/><path d="M14.5 15.6v1.8a.9.9 0 0 0 1.8 0v-1.8"/><path d="M12.87 13.2A3.7 3.7 0 1 1 17.93 13.2"/><path d="M6.34 13.2A3.5 3.5 0 1 1 11.77 9.81"/><path d="M8.9 6.85A3.5 3.5 0 0 1 15.9 6.83"/><path d="M6.9 7.2L4.5 4.6a.95.95 0 0 1 1.35-1.3L8.75 6.6"/></svg>
+            <span class="nv-label" data-t="nav.postres">POSTRES</span>
+            <span class="nv-coal" aria-hidden="true"></span>
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ 3 · Panel de Contacto ============ -->
+  <dialog id="contacto" class="contacto" aria-labelledby="titulo-contacto">
+    <div class="contacto-hoja">
+      <div class="contacto-asa" aria-hidden="true"></div>
+      <div class="contacto-cab">
+        <div class="contacto-cab-txt">
+          <p class="contacto-kicker">FREDY · PUERTO MADERO</p>
+          <h2 id="titulo-contacto" class="contacto-titulo" data-t="contacto">CONTACTO</h2>
+        </div>
+        <button type="button" id="contacto-cerrar" class="contacto-x press" aria-label="Cerrar" data-t-aria="cerrar">
+          <svg aria-hidden="true"><use href="#i-cerrar"/></svg>
+        </button>
+      </div>
+      <div class="linea linea-izq" aria-hidden="true"></div>
+
+      <section class="contacto-resena">
+        <p class="contacto-pregunta" data-t="experiencia">¿Cómo fue tu experiencia?</p>
+        <a id="c-resena" class="cta press" href="#" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-estrella"/></svg>
+          <span data-t="resena">Dejá tu reseña en Google</span>
+        </a>
+        <p class="contacto-nota" data-t="resenaNota">Tu opinión ayuda a otros viajeros a encontrarnos.</p>
+      </section>
+
+      <p class="contacto-grupo" data-t="seguinos">SEGUINOS</p>
+      <a id="c-instagram" class="fila press" href="#" target="_blank" rel="noopener">
+        <svg class="fila-ic" aria-hidden="true"><use href="#i-camara"/></svg>
+        <span class="fila-txt"><span class="fila-t">Instagram</span><span class="fila-s" id="c-instagram-usuario"></span></span>
+        <svg class="fila-fl" aria-hidden="true"><use href="#i-salir"/></svg>
+      </a>
+
+      <p class="contacto-grupo" data-t="proxima">TU PRÓXIMA VISITA O EVENTO</p>
+      <a id="c-whatsapp" class="fila press" href="#" target="_blank" rel="noopener">
+        <svg class="fila-ic" aria-hidden="true"><use href="#i-chat"/></svg>
+        <span class="fila-txt"><span class="fila-t" data-t="whatsapp">Escribinos por WhatsApp</span><span class="fila-s" id="c-whatsapp-num"></span></span>
+        <svg class="fila-fl" aria-hidden="true"><use href="#i-salir"/></svg>
+      </a>
+      <a id="c-telefono" class="fila press" href="#">
+        <svg class="fila-ic" aria-hidden="true"><use href="#i-telefono"/></svg>
+        <span class="fila-txt"><span class="fila-t" data-t="llamar">Llamar</span><span class="fila-s" id="c-telefono-num"></span></span>
+        <svg class="fila-fl" aria-hidden="true"><use href="#i-flecha"/></svg>
+      </a>
+      <a id="c-reservar" class="fila press" href="#" target="_blank" rel="noopener">
+        <svg class="fila-ic" aria-hidden="true"><use href="#i-calendario"/></svg>
+        <span class="fila-txt"><span class="fila-t" data-t="reservar">Reservar mesa</span><span class="fila-s" data-t="reservarNota">Para tu próxima visita</span></span>
+        <svg class="fila-fl" aria-hidden="true"><use href="#i-salir"/></svg>
+      </a>
+
+      <p class="contacto-grupo" data-t="masFredy">MÁS DE FREDY</p>
+      <a id="c-shows" class="fila press" href="#" target="_blank" rel="noopener">
+        <svg class="fila-ic" aria-hidden="true"><use href="#i-musica"/></svg>
+        <span class="fila-txt"><span class="fila-t" data-t="shows">Noches de show</span><span class="fila-s" data-t="showsNota"></span></span>
+        <svg class="fila-fl" aria-hidden="true"><use href="#i-salir"/></svg>
+      </a>
+      <a id="c-web" class="fila fila-ultima press" href="#" target="_blank" rel="noopener">
+        <svg class="fila-ic" aria-hidden="true"><use href="#i-web"/></svg>
+        <span class="fila-txt"><span class="fila-t" data-t="web">Conocé más de Fredy</span><span class="fila-s" data-t="webNota">Historia, reservas y ubicación en la web oficial</span></span>
+        <svg class="fila-fl" aria-hidden="true"><use href="#i-salir"/></svg>
+      </a>
+
+      <p class="contacto-cierre" data-t="buenProvecho">Pedí a tu mozo · ¡Buen provecho!</p>
+    </div>
+  </dialog>
+
+  <!-- ============ Íconos y banderas ============ -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="b-ar" viewBox="0 0 30 20"><rect width="30" height="20" fill="#74ACDF"/><rect y="6.67" width="30" height="6.67" fill="#FFFFFF"/><circle cx="15" cy="10" r="1.9" fill="#F6B40E"/></symbol>
+    <symbol id="b-us" viewBox="0 0 30 20"><rect width="30" height="20" fill="#FFFFFF"/><rect y="0" width="30" height="1.54" fill="#B22234"/><rect y="3.08" width="30" height="1.54" fill="#B22234"/><rect y="6.15" width="30" height="1.54" fill="#B22234"/><rect y="9.23" width="30" height="1.54" fill="#B22234"/><rect y="12.31" width="30" height="1.54" fill="#B22234"/><rect y="15.38" width="30" height="1.54" fill="#B22234"/><rect y="18.46" width="30" height="1.54" fill="#B22234"/><rect width="12" height="10.77" fill="#3C3B6E"/></symbol>
+    <symbol id="b-br" viewBox="0 0 30 20"><rect width="30" height="20" fill="#009C3B"/><polygon points="15,2.2 27.5,10 15,17.8 2.5,10" fill="#FFDF00"/><circle cx="15" cy="10" r="4.2" fill="#002776"/></symbol>
+    <symbol id="b-fr" viewBox="0 0 30 20"><rect width="10" height="20" fill="#0055A4"/><rect x="10" width="10" height="20" fill="#FFFFFF"/><rect x="20" width="10" height="20" fill="#EF4135"/></symbol>
+
+
+    <symbol id="i-agenda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M3 7.5h3M3 12h3M3 16.5h3"/><circle cx="12" cy="10" r="2.3"/><path d="M8.5 16.5c.6-2 2-3 3.5-3s2.9 1 3.5 3"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-estrella" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+    <symbol id="i-camara" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M8 6l1.5-2.5h5L16 6"/><circle cx="12" cy="13" r="3.6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 10h6M9 13h4"/></symbol>
+    <symbol id="i-telefono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-web" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></symbol>
+    <symbol id="i-calendario" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8.5 14.5l2 2 4-4"/></symbol>
+    <symbol id="i-musica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+    <symbol id="i-salir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></symbol>
+  </svg>
+
+  <script src="js/datos.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/textos.js"></script>
+  <script src="js/salon.js"></script>
+</body>
+</html>
